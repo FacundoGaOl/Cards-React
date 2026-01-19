@@ -74,7 +74,8 @@ const comics = [
                 <Card
                     key={comic.id}
                     image={comic.cover}
-                    title={comic.title}
+                    name={comic.name}
+                    author={comic.author}
                     description={comic.description}
                 />
                 ))}

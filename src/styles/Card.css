@@ -8,19 +8,25 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 .cardContainer {
-    position: relative;
-    height: 200px;
+    height: 250px;
+    width: 100%;
     overflow: hidden;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardImage {
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    object-position: center;
 }
 
 .cardText {
@@ -30,7 +36,7 @@
     flex-direction: column;
 }
 
-.cardTitle {
+.cardName {
     margin: 0 0 0.8rem 0;
     color: #2d3748;
     font-size: 1.4rem;
@@ -39,10 +45,10 @@
 }
 
 .cardAuthor {
-    display: flex;
-    gap: 15px;
+    color: #5B4A9A;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-    font-size: 0.85rem;
 }
 
 .cardDescription {
