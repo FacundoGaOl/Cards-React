@@ -6,6 +6,8 @@ import gastroinforme from './assets/img/gastroinforme.jpg';
 import batman10 from './assets/img/AbsoluteBatman10.jpg';
 import wonderWoman from './assets/img/AbsoluteWonderWoman9.jpg';
 import kimba from './assets/img/Kimba el león blanco.jpg';
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
@@ -69,6 +71,7 @@ const comics = [
 
     return (
         <div className="app">
+            <Header />
             <div className="cardsContainer">
                 {comics.map((comic) => (
                 <Card
@@ -80,6 +83,7 @@ const comics = [
                 />
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }
